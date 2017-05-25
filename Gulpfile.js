@@ -79,10 +79,10 @@ gulp.task('build', ['clean'], function(){
     gulp.start('jsBrowserify');
   }
   gulp.start('bower');
-  gulp.start('cssBuild');
 });
 
 gulp.task('serve', ['build'], function() {
+  gulp.start('cssBuild');
   browserSync.init({
     server: {
       baseDir: './',
