@@ -1,5 +1,6 @@
 var googKey = require('./../.env').googKey;
 var weaKey = require('./../.env').weaKey;
+var mapStyle = require('./../js/theme-interface.js').mapStyle;
 
 function Map(){
 }
@@ -16,7 +17,7 @@ Map.prototype.getMap = function(city) {
     var userLatLng = new google.maps.LatLng(response.coord.lat, response.coord.lon);
     myCity = {
       center: userLatLng,
-      mapTypeId: 'satellite',
+      styles: mapStyle,
       zoom: 13
     };
     map = new google.maps.Map(document.getElementById('map'), myCity);
