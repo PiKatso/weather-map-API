@@ -1,6 +1,6 @@
 # Google Maps/Weather App
 
-This project will save the world!
+This project will allow the user to enter a location and retrieve the weather.
 
 **Landing Page:**
 ![](https://github.com/PiKatso/weather-map-API/blob/master/img/Screen%20Shot%202017-05-25%20at%204.01.05%20PM.png)
@@ -50,7 +50,7 @@ Kat Gifford & Steven Galvin
 
 MIT License
 
-Copyright (c) Kat Gifford & Steven Galvin
+Copyright (c) Kat Gifford & Steven Galvin, 2017
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
