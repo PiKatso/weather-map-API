@@ -2,6 +2,9 @@
 
 This project will save the world!
 
+**Landing Page:**
+![](https://github.com/PiKatso/weather-map-API/blob/master/img/Screen%20Shot%202017-05-25%20at%204.01.05%20PM.png)
+
 ### Prerequisites
 
 Web browser with ES6 compatibility
