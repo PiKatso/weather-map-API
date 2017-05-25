@@ -1,9 +1,14 @@
 var Weather = require('./../js/weather.js').weatherModule;
 
-$(document).ready(function() {
- var currentWeather = new Weather();
- $('#weather-location').click(function(){
-   var city = $('#location').val();
-   currentWeather.getWeather(city);
- });
+var displayWeather = function(city, humidityData, windSpeedData, temperatureData) {
+
+  $('.showWeather').text("The humidity in " + city + " is " + humidityData + "%. The wind speed is " + windSpeedData + "mph. The temperature is " + temperatureData + " degrees fahrenheit.");
+}
+
+$(document).ready(function(){
+  var currentWeatherObject = new Weather();
+  $('#find-weather').click(function(){
+    var city = $('#city').val();
+    currentWeatherObject.getWeather(city, displayWeather);
+  });
 });

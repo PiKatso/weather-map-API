@@ -1,5 +1,5 @@
-var googKey = require('./../.env').apiKey;
-var mapsapi = require('google-maps-api')(apiKey);
+var googKey = require('./../.env').googKey;
+var mapsapi = require('google-maps-api')(googKey);
 
 function Map(){
 }
