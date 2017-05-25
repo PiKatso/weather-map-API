@@ -5,6 +5,7 @@ $(document).ready(function() {
   $('#find-city').click(function(e) {
     e.preventDefault();
     var city = $('#city').val();
+    console.log(city)
     map.getMap(city);
   });
 
