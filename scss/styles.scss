@@ -1,10 +1,12 @@
 $bluegray : #8797af;
+$lightblue : #d8ecf4;
+$red :#f7584c;
+
 
 body {
   text-align: center;
   #header {
     color: $bluegray;
-    background-color: #1d2c4d;
     margin-bottom: 17px;
   }
   #map {
@@ -16,9 +18,13 @@ body {
     border-radius: 3px;
     border-width: 1px;
     margin-bottom: 5px;
+    text-align: center;
+    color: $bluegray;
   }
   button {
     padding-bottom: 10px;
+    background-color: $lightblue;
+    color: $bluegray;
   }
   .showWeather {
     font-size: 20px;
@@ -26,5 +32,8 @@ body {
   }
   #map {
     margin: 7px;
+  }
+  .red {
+    color: $red;
   }
 }

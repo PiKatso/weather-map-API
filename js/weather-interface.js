@@ -2,7 +2,7 @@ var Weather = require('./../js/weather.js').weatherModule;
 
 var displayWeather = function(city, humidityData, windSpeedData, temperatureData) {
 
-  $('.showWeather').text("The humidity in " + city + " is " + humidityData + "%. The wind speed is " + windSpeedData + "mph. The temperature is " + temperatureData + " degrees fahrenheit.");
+  $('.showWeather').html("The humidity in " + city + " is <span class='red'>" + humidityData + "%</span>.<br> The wind speed is <span class='red'>" + windSpeedData + "mph</span>.<br> The temperature is <span class='red'>" + temperatureData + "°F</span>.");
 };
 
 $(document).ready(function(){
